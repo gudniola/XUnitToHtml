@@ -1,0 +1,302 @@
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+div.failed_button, div.errored_button, div.skipped_button {
+    display:inline;
+}
+
+div.testsuite, div.suite_listing {
+    -webkit-border-image: none;
+    background-color: rgb(233, 241, 244);
+    border-bottom-color: rgb(216, 222, 226);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-style: solid;
+    border-bottom-width: 2.1111111640930176px;
+    border-left-color: rgb(216, 222, 226);
+    border-left-style: solid;
+    border-left-width: 2.1111111640930176px;
+    border-right-color: rgb(216, 222, 226);
+    border-right-style: solid;
+    border-right-width: 2.1111111640930176px;
+    border-top-color: rgb(233, 241, 244);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-top-style: solid;
+    border-top-width: 2.1111111640930176px;
+    color: rgb(51, 51, 51);
+    display: block;
+    font-family: Helvetica, arial, freesans, clean, sans-serif;
+    font-size: 13.333333969116211px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    line-height: 20px;
+    margin-bottom: 5px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    width: 907.77783203125px;
+}
+
+div.testcase {
+    -webkit-background-clip: border-box;
+    -webkit-background-origin: padding-box;
+    -webkit-background-size: auto;
+    -webkit-border-image: none;
+    background-attachment: scroll;
+    background-clip: border-box;
+    background-color: rgba(0, 0, 0, 0);
+    background-image: -webkit-linear-gradient(top, rgb(255, 255, 246), rgb(255, 253, 227));
+    background-origin: padding-box;
+    background-size: auto;
+    border-bottom-color: rgb(231, 231, 206);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-style: solid;
+    border-bottom-width: 1.1111111640930176px;
+    border-left-color: rgb(231, 231, 206);
+    border-left-style: solid;
+    border-left-width: 1.1111111640930176px;
+    border-right-color: rgb(231, 231, 206);
+    border-right-style: solid;
+    border-right-width: 1.1111111640930176px;
+    border-top-color: rgb(231, 231, 206);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-top-style: solid;
+    border-top-width: 1.1111111640930176px;
+    color: rgb(51, 51, 51);
+    display: block;
+    font-family: Helvetica, arial, freesans, clean, sans-serif;
+    font-size: 12.222222328186035px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    line-height: 17.77777862548828px;
+    margin-bottom: 2px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    padding-bottom: 2px;
+    padding-left: 2px;
+    padding-right: 2px;
+    padding-top: 2px;
+    position: relative;
+}
+
+div.output {
+    -webkit-background-clip: border-box;
+    -webkit-background-origin: padding-box;
+    -webkit-background-size: auto;
+    -webkit-border-image: none;
+    background-attachment: scroll;
+    background-clip: border-box;
+    background-color: rgba(0, 0, 0, 0);
+    background-image: -webkit-linear-gradient(top, rgb(255, 255, 255), rgb(255, 255, 255));
+    background-origin: padding-box;
+    background-size: auto;
+
+    border-bottom-color: rgb(231, 231, 206);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-style: solid;
+    border-bottom-width: 1.1111111640930176px;
+    border-left-color: rgb(231, 231, 206);
+    border-left-style: solid;
+    border-left-width: 1.1111111640930176px;
+    border-right-color: rgb(231, 231, 206);
+    border-right-style: solid;
+    border-right-width: 1.1111111640930176px;
+    border-top-color: rgb(231, 231, 206);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-top-style: solid;
+    border-top-width: 1.1111111640930176px;
+
+    border-collapse: separate;
+    color: rgb(0, 0, 0);
+    display: block;
+    font-family: 'Bitstream Vera Sans Mono', 'Courier New', monospace;
+    font-size: 12.22px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    line-height: 17px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 12px;
+    padding-right: 0px;
+    padding-top: 0px;
+    text-align: left;
+    white-space: pre;
+    word-wrap:break-word;
+}
+
+div.test_failure, div.test_error {
+    background-image: -webkit-linear-gradient(top, rgb(255, 200, 200), rgb(255, 244, 244));
+}
+
+div.test_skipped {
+    background-image: -webkit-linear-gradient(top, rgb(255, 255, 227), rgb(244, 244, 244));
+}
+
+div.test_success {
+    background-image: -webkit-linear-gradient(top, rgb(200, 255, 200), rgb(244, 255, 244));
+}
+
+div.suite_info {
+    -webkit-background-clip: border-box;
+    -webkit-background-origin: padding-box;
+    -webkit-background-size: auto;
+    -webkit-border-image: none;
+    background-attachment: scroll;
+    background-clip: border-box;
+    background-color: rgba(0, 0, 0, 0);
+    background-image: -webkit-linear-gradient(top, rgb(200, 200, 255), rgb(244, 244, 255));
+    background-origin: padding-box;
+    background-size: auto;
+    border-bottom-color: rgb(231, 231, 206);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-style: solid;
+    border-bottom-width: 1.1111111640930176px;
+    border-left-color: rgb(231, 231, 206);
+    border-left-style: solid;
+    border-left-width: 1.1111111640930176px;
+    border-right-color: rgb(231, 231, 206);
+    border-right-style: solid;
+    border-right-width: 1.1111111640930176px;
+    border-top-color: rgb(231, 231, 206);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-top-style: solid;
+    border-top-width: 1.1111111640930176px;
+    color: rgb(51, 51, 51);
+    display: block;
+    font-family: Helvetica, arial, freesans, clean, sans-serif;
+    font-size: 12.222222328186035px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    line-height: 17.77777862548828px;
+    margin-bottom: 20px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    padding-bottom: 12.986111640930176px;
+    padding-left: 12.986111640930176px;
+    padding-right: 12.986111640930176px;
+    padding-top: 12.986111640930176px;
+    position: relative;
+}
+
+tr.failed_suite, tr.errored_suite {
+    background-color: rgb(255, 200, 200);
+}
+
+tr.skipped_suite {
+    background-color: rgb(255, 255, 227);
+}
+
+tr.success_suite {
+    background-color: rgb(200, 255, 200);
+}
+
+div.goto_suite {
+    display: inline;
+}
+
+.datagrid table {
+    border-collapse: collapse;
+    text-align: left;
+    width: 100%;
+}
+
+.datagrid {
+    font: normal 12px/150% Arial, Helvetica, sans-serif;
+    background: #fff;
+    overflow: hidden;
+    border: 1px solid #006699;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    width:907.77783203125px;
+}
+
+.datagrid table td, .datagrid table th {
+    padding: 3px 10px;
+}
+
+.datagrid table thead th {
+    background:-webkit-linear-gradient(top, rgb(200, 200, 255), rgb(220, 220, 255));
+    color:#FFFFFF;
+    font-size: 15px;
+    font-weight: bold;
+    border-left: 1px solid #0070A8;
+    border-bottom: 1px solid #0070A8;
+}
+
+.datagrid table thead th:first-child {
+    border: none;
+}
+
+.datagrid table tbody td {
+    color: #112233;
+    border-left: 1px solid #0070A8;
+    font-size: 12px;
+    font-weight: normal;
+}
+
+.datagrid table tbody .alt td {
+    background: #E1EEf4;
+color: #00557F;
+}
+
+.datagrid table tbody td:first-child {
+    border-left: none;
+}
+
+.datagrid table tbody tr:last-child td {
+    border-bottom: none;
+}

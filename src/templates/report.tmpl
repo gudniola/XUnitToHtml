@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Test results</title>
+    <style type="text/css">
+        $stylesheet
+    </style>
+    <script type="text/javascript">
+        $jquery
+    </script>
+</head>
+<body>
+    <section>
+        <h1>Test results</h1>
+        $suite_listing
+    </section>
+#for $testsuite in $testsuites
+    <section>
+        $testsuite
+    </section>
+#end for
+<script>
+    \$(".output").hide(0);
+    \$(".testcase").each(function(index) {
+        \$(this).click(function(e) {
+            if (\$(this).children(".output:visible").size() > 0) {
+                \$(this).children(".output").hide(100);
+            } else {
+                \$(this).children(".output").show(100);
+            }
+            e.preventDefault();
+            return false;
+        })
+    });
+    \$(".errored_button").click(function(e){
+        var target = \$(".test_error").first().offset();
+        window.scrollTo(target.left, target.top);
+        e.preventDefault();
+    });
+    \$(".failed_button").click(function(e){
+        var target = \$(".test_failed").first().offset();
+        window.scrollTo(target.left, target.top);
+        e.preventDefault();
+    });
+    \$(".skipped_button").click(function(e){
+        var target = \$(".test_skipped").first().offset();
+        window.scrollTo(target.left, target.top);
+        e.preventDefault();
+    });
+    \$(".goto_suite").each(function(index){
+        \$(this).click(function(e){
+            var target = \$("#test_suite_"+\$(this).attr("id")).first().offset();
+            window.scrollTo(target.left, target.top);
+        })
+    });
+</script>
+</body>
+</html>

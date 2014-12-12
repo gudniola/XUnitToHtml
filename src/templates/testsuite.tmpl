@@ -1,0 +1,31 @@
+<div class="testsuite">
+    <ul>
+        <li>
+            <div class="suite_info" id="test_suite_$id">
+                <h2>Test Suite : $suite_name</h2>
+                <p>
+                    Ran $total_run tests.
+                    <div class="failed_button">$failed failed</div>,
+                    <div class="errored_button">$errored had errors</div> in execution and
+                    <div class="skipped_button">$skipped were skipped</div>.
+                </p>
+            </div>
+        </li>
+        #for $testcase in [t for t in $testcases if t['info']['type'] != 'success' or $show_successes]
+        <li>
+            <div class="testcase test_$testcase.info.type">
+                <a href="#$testcase.name"></a>
+                <h3>Test $testcase.name</h3>
+                <p>Completed in $testcase.time seconds, it $testcase.info.msg
+                </p>
+                #if $testcase.info.type != 'success'
+                <p>Click to show output</p>
+                <div class="output">
+                    $testcase.info.data
+                </div>
+                #end if
+            </div>
+        </li>
+        #end for
+    </ul>
+</div>

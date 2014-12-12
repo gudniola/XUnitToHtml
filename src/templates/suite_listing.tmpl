@@ -1,0 +1,36 @@
+<div class="suite_listing">
+    <div class="datagrid">
+        <table>
+            <thead>
+                <tr>
+                    <th>&nbsp;</th>
+                    <th>Test suite name</th>
+                    <th>tests run</th>
+                    <th>failures</th>
+                    <th>errors</th>
+                    <th>skips</th>
+                </tr>
+            </thead>
+            <tbody>
+                #for $suiteinfo in $testsuites
+                #if $suiteinfo.failed != '0'
+                <tr class="failed_suite">
+                #else if $suiteinfo.errored != '0'
+                <tr class="errored_suite">
+                #else if $suiteinfo.skipped != '0'
+                <tr class="skipped_suite">
+                #else
+                <tr class="success_suite">
+                #end if
+                    <td><div class="goto_suite" id="$suiteinfo.id">(Goto)</div></td>
+                    <td>$suiteinfo.suite_name</td>
+                    <td>$suiteinfo.total_run</td>
+                    <td>$suiteinfo.failed</td>
+                    <td>$suiteinfo.errored</td>
+                    <td>$suiteinfo.skipped</td>
+                </tr>
+                #end for
+            </tbody>
+        </table>
+    </div>
+</div>
